@@ -1,16 +1,43 @@
 /*=================== HOMEPAGE STYLES =========================
 ==============================================================*/
 
-/*============= CUSTOMIZE THE HOMEPAGE CAROUSEL ============ */
+/*=========== FONTS =========*/
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham/Gotham Bold.otf");
+}
 
-.carousel {
+/*============== HEADER ======================*/
+header {
+  .header_upheader {
+    background-color: #363636;
+    text-align: right;
+    p {
+      color: #696969;
+      font-family: "Gotham-Bold";
+      font-size: 0.8571em;
+      display: inline-block;
+    }
+    form {
+      display: inline-block;
+      input {
+        width: 24%;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+/*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
+#firstCarousel {
   height: 672px;
   margin-bottom: 60px;
   .carousel-inner {
     /* Declare heights because of positioning of img element */
     .item {
       height: 672px;
-      background-color: #777;
+      background-color: #FFF;
       div {
         background-size: 100%;
         max-height: 672px;
