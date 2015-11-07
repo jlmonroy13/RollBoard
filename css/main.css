@@ -1,3 +1,14 @@
+/*=================== FONTS =========================
+==============================================================*/
+@font-face {
+  font-family: "ITC_Avant_Bold";
+  src: url("../fonts/Avant Garde/AvantGardGothEF-Bold.otf"); }
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("../fonts/Proxima Nova/ProximaNova-Bold.otf"); }
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("../fonts/Proxima Nova/ProximaNova-Regular.otf"); }
 /*=================== HOMEPAGE STYLES =========================
 ==============================================================*/
 /*=========== FONTS =========*/
