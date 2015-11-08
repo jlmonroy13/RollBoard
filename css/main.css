@@ -16,18 +16,22 @@
   font-family: "Gotham-Book";
   src: url("../fonts/Gotham/Gotham Book.otf"); }
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/Open Sans/OpenSans-Bold.ttf"); }
+  font-family: "Gotham-Medium";
+  src: url("../fonts/Gotham/Gotham Medium.otf"); }
 @font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
+  font-family: "ITC_Avant-Bold";
+  src: url("../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bold.otf"); }
 /*=================== HOMEPAGE STYLES =========================
 ==============================================================*/
 /*============== HEADER ======================*/
 header .header_upheader {
   background-color: #363636;
   text-align: right;
-  height: 50px; }
+  height: 50px;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100%; }
   header .header_upheader p {
     color: #696969;
     font-family: "Gotham-Bold";
@@ -79,7 +83,8 @@ header nav.navbar {
   border-radius: 0px;
   border: none;
   margin-bottom: 0px;
-  z-index: 10; }
+  z-index: 10;
+  margin-top: 50px; }
   header nav.navbar .container .navbar-header .navbar-brand img {
     margin-top: 20px; }
   header nav.navbar .container .collapse ul.nav {
@@ -115,35 +120,115 @@ header nav.navbar {
 /* VERTICAL SOCIAL NETWORKS */
 .counterSocialNet {
   position: absolute;
-  float: right;
-  z-index: 10; }
+  z-index: 10;
+  top: 170px;
+  right: 0; }
+  .counterSocialNet ul {
+    list-style: none;
+    margin-bottom: 0; }
+    .counterSocialNet ul li {
+      width: 48px;
+      height: 48px;
+      text-align: center; }
+      .counterSocialNet ul li p {
+        margin-bottom: 0;
+        color: #fff; }
+      .counterSocialNet ul li img {
+        margin-top: 5px;
+        height: 16px;
+        width: 18px; }
+    .counterSocialNet ul li.counterSocialNet_facebook {
+      background-color: #3b5998; }
+    .counterSocialNet ul li.counterSocialNet_twitter {
+      background-color: #1daced; }
+    .counterSocialNet ul li.counterSocialNet_pinterest {
+      background-color: #cb1f27; }
+    .counterSocialNet ul li.counterSocialNet_google {
+      background-color: #dd4b39; }
+    .counterSocialNet ul li.counterSocialNet_xxx {
+      background-color: #e84c2f; }
+
+/*========== BUTTONS STYLES ==========*/
+.transparentButton {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ad45c7;
+  font-size: 1em;
+  font-family: "Gotham-Book";
+  border: 2px solid #ad45c7;
+  padding: 15px 30px;
+  border-radius: 30px; }
+
+.transparentButton:hover,
+.transparentButton:focus,
+.transparentButton:active {
+  background-color: #ad45c7;
+  color: #fff;
+  border: 2px solid #ad45c7;
+  outline: none; }
+
+.pinkButton {
+  color: #fff;
+  font-size: 1em;
+  font-family: "Gotham-Book";
+  background-color: #ad45c7;
+  border: 2px solid #ad45c7;
+  padding: 15px 30px;
+  border-radius: 30px; }
+
+.pinkButton:hover,
+.pinkButton:focus,
+.pinkButton:active {
+  color: #ad45c7;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #ad45c7;
+  outline: none; }
 
 /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
-#home .home_carousel {
-  margin-top: -120px; }
-
-#firstCarousel {
-  height: 672px;
-  margin-bottom: 60px; }
-  #firstCarousel .carousel-inner {
-    /* Declare heights because of positioning of img element */ }
-    #firstCarousel .carousel-inner .item {
+#home .home_carousel #firstCarousel {
+  max-height: 672px;
+  height: 93vh;
+  margin-top: -120px;
+  width: 100%; }
+  #home .home_carousel #firstCarousel .carousel-indicators li {
+    height: 15px;
+    width: 15px; }
+  #home .home_carousel #firstCarousel .carousel-inner {
+    /* Declare heights because of positioning of img element */
+    /* Since positioning the image, we need to help out the caption */ }
+    #home .home_carousel #firstCarousel .carousel-inner .item {
       height: 672px;
-      background-color: #FFF; }
-      #firstCarousel .carousel-inner .item div {
-        background-size: 100%;
+      background-color: transparent;
+      width: 100%; }
+      #home .home_carousel #firstCarousel .carousel-inner .item div {
+        background-size: cover;
         max-height: 672px;
-        height: 80vh;
+        height: 93vh;
         width: 100%; }
-      #firstCarousel .carousel-inner .item .first-slide {
-        background: url("../img/bckg/home_carousel_img1.jpg"); }
-      #firstCarousel .carousel-inner .item .second-slide {
-        background: url("../img/bckg/home_carousel_img2.jpg"); }
-      #firstCarousel .carousel-inner .item .third-slide {
-        background: url("../img/bckg/home_carousel_img3.jpg"); }
-    #firstCarousel .carousel-inner .container {
-      /* Since positioning the image, we need to help out the caption */ }
-      #firstCarousel .carousel-inner .container .carousel-caption {
-        z-index: 10; }
+      #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
+        background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat; }
+      #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
+        background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat; }
+      #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
+        background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat; }
+    #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+      z-index: 10;
+      bottom: 19%;
+      text-align: right;
+      margin-right: -11vw; }
+      #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
+        text-align: right;
+        font-family: "ITC_Avant-Bold";
+        margin: 0;
+        font-size: 3.5714em;
+        margin: -5px 0; }
+      #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1:nth-child(4) {
+        margin-bottom: 15px; }
+  #home .home_carousel #firstCarousel .carousel-control {
+    max-height: 672px;
+    height: 93vh;
+    width: 3%; }
+    #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-left,
+    #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-right {
+      top: 68%; }
 
 /*# sourceMappingURL=main.css.map */
