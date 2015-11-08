@@ -1,35 +1,5 @@
-/*=================== FONTS =========================
-==============================================================*/
-@font-face {
-  font-family: "ITC_Avant_Bold";
-  src: url("../fonts/Avant Garde/AvantGardGothEF-Bold.otf"); }
-@font-face {
-  font-family: "Proxima_Nova_Bold";
-  src: url("../fonts/Proxima Nova/ProximaNova-Bold.otf"); }
-@font-face {
-  font-family: "Proxima_Nova_Regular";
-  src: url("../fonts/Proxima Nova/ProximaNova-Regular.otf"); }
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url("../fonts/Gotham/Gotham Bold.otf"); }
-@font-face {
-  font-family: "Gotham-Book";
-  src: url("../fonts/Gotham/Gotham Book.otf"); }
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url("../fonts/Gotham/Gotham Medium.otf"); }
-@font-face {
-  font-family: "ITC_Avant-Bold";
-  src: url("../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bold.otf"); }
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/Open Sans/OpenSans-Bold.ttf"); }
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
-/*=================== HOMEPAGE STYLES =========================
-==============================================================*/
-/*============== HEADER ======================*/
+/*============== HEADER ======================
+============================================*/
 header .header_upheader {
   background-color: #363636;
   text-align: right;
@@ -54,7 +24,8 @@ header .header_upheader {
       border-radius: 0px;
       font-family: "Gotham-Book";
       font-size: 0.8571em;
-      margin-right: 10px; }
+      margin-right: 10px;
+      color: #389fbd; }
     header .header_upheader form input:focus {
       outline: none; }
     header .header_upheader form input::-webkit-input-placeholder {
@@ -123,7 +94,8 @@ header nav.navbar {
       padding-top: 3px; }
 
 /* /======= END HEADER */
-/* VERTICAL SOCIAL NETWORKS */
+/*=========== VERTICAL SOCIAL NETWORKS =============
+==================================================*/
 .counterSocialNet {
   position: absolute;
   z-index: 10;
@@ -154,7 +126,9 @@ header nav.navbar {
     .counterSocialNet ul li.counterSocialNet_xxx {
       background-color: #e84c2f; }
 
-/*========== BUTTONS STYLES ==========*/
+/* /======= END VERTICAL SOCIAL NETWORKS */
+/*=============== BUTTONS STYLES ==========
+=========================================*/
 .transparentButton {
   background-color: rgba(255, 255, 255, 0.5);
   color: #ad45c7;
@@ -189,52 +163,146 @@ header nav.navbar {
   border: 2px solid #ad45c7;
   outline: none; }
 
-/*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
-#home .home_carousel #firstCarousel {
-  max-height: 672px;
-  height: 93vh;
-  margin-top: -120px;
-  width: 100%; }
-  #home .home_carousel #firstCarousel .carousel-indicators li {
-    height: 15px;
-    width: 15px; }
-  #home .home_carousel #firstCarousel .carousel-inner {
-    /* Declare heights because of positioning of img element */
-    /* Since positioning the image, we need to help out the caption */ }
-    #home .home_carousel #firstCarousel .carousel-inner .item {
-      height: 672px;
-      background-color: transparent;
+/* /======= END BUTTONS STYLES */
+/*============ COLORS FOR ROLLBOARD BEST SELLER ===========
+=========================================================*/
+.redboard {
+  background-color: #a30001; }
+
+.blueboard {
+  background-color: #1f66ae; }
+
+.yellowboard {
+  background-color: #ffc000; }
+
+.blackboard {
+  background-color: #000; }
+
+.whiteboard {
+  background-color: #e4e4e4; }
+
+/*============== HOMEPAGE STYLES ======================================
+=====================================================================*/
+#home {
+  /*================= SECTION CAROUSEL ================================*/ }
+  #home .home_carousel {
+    /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */ }
+    #home .home_carousel #firstCarousel {
+      max-height: 672px;
+      height: 93vh;
+      margin-top: -120px;
       width: 100%; }
-      #home .home_carousel #firstCarousel .carousel-inner .item div {
-        background-size: cover;
+      #home .home_carousel #firstCarousel .carousel-indicators li {
+        height: 15px;
+        width: 15px; }
+      #home .home_carousel #firstCarousel .carousel-inner {
+        /* Declare heights because of positioning of img element */
+        /* Since positioning the image, we need to help out the caption */ }
+        #home .home_carousel #firstCarousel .carousel-inner .item {
+          height: 672px;
+          background-color: transparent;
+          width: 100%; }
+          #home .home_carousel #firstCarousel .carousel-inner .item div {
+            background-size: cover;
+            max-height: 672px;
+            height: 93vh;
+            width: 100%; }
+          #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
+            background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat; }
+          #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
+            background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat; }
+          #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
+            background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat; }
+        #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+          z-index: 10;
+          bottom: 19%;
+          text-align: right;
+          margin-right: -11vw; }
+          #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
+            text-align: right;
+            font-family: "ITC_Avant-Bold";
+            margin: 0;
+            font-size: 3.5714em;
+            margin: -5px 0; }
+          #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1:nth-child(4) {
+            margin-bottom: 15px; }
+      #home .home_carousel #firstCarousel .carousel-control {
         max-height: 672px;
         height: 93vh;
-        width: 100%; }
-      #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
-        background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat; }
-      #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
-        background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat; }
-      #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
-        background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat; }
-    #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
-      z-index: 10;
-      bottom: 19%;
-      text-align: right;
-      margin-right: -11vw; }
-      #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
-        text-align: right;
-        font-family: "ITC_Avant-Bold";
-        margin: 0;
-        font-size: 3.5714em;
-        margin: -5px 0; }
-      #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1:nth-child(4) {
-        margin-bottom: 15px; }
-  #home .home_carousel #firstCarousel .carousel-control {
-    max-height: 672px;
-    height: 93vh;
-    width: 3%; }
-    #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-left,
-    #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-right {
-      top: 68%; }
+        width: 3%; }
+        #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-left,
+        #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-right {
+          top: 68%; }
+  #home .home_bestseller {
+    text-align: center;
+    padding-top: 15px;
+    height: 100vh;
+    max-height: 689px; }
+    #home .home_bestseller .container-fluid h2 {
+      font-family: "ITC_Avant_Bold";
+      color: #000;
+      font-size: 2.7857em;
+      margin-bottom: 45px; }
+    #home .home_bestseller .container-fluid #secondCarousel .carousel-inner {
+      text-align: center; }
+      #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div {
+        background-color: #fff; }
+        #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container {
+          padding-left: 120px; }
+          #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div {
+            text-align: left; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div h3 {
+              font-family: "Gotham-Bold";
+              color: #000;
+              font-size: 1.7857em; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div p:nth-child(3) {
+              color: #2b949a; }
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div p:nth-child(3) span {
+                background: url("../img/icn/home_bestseller_freeshippingIcon.png") no-repeat;
+                background-size: 100%;
+                width: 25px;
+                height: 24px;
+                display: inline-block;
+                margin-bottom: -5px;
+                margin-right: 10px; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color p {
+              font-family: "Gotham-Bold";
+              color: #000;
+              font-size: 1.0714em;
+              margin-right: 10px;
+              display: inline-block;
+              margin-top: 0px; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              display: inline-block;
+              margin-right: 5px;
+              margin-bottom: -10px; }
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span a {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                margin-bottom: -10px; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_price p {
+              color: #414141;
+              font-family: "Bebas-Neue";
+              font-size: 3.9285em;
+              display: inline-block;
+              margin-right: 10px; }
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_price p:last-child {
+              color: #414141;
+              font-family: "Bebas-Neue";
+              font-size: 1.5714em;
+              text-decoration: line-through;
+              display: inline-block; }
+    #home .home_bestseller .container-fluid #secondCarousel .carousel-control span:first-child {
+      color: #e25a95;
+      opacity: 0.8; }
+    #home .home_bestseller .container-fluid #secondCarousel .home_bestseller_secondCarousel_right {
+      right: 0;
+      left: auto; }
+    #home .home_bestseller .container-fluid a.home_bestseller_buttonSeemore {
+      margin-top: 55px; }
 
 /*# sourceMappingURL=main.css.map */

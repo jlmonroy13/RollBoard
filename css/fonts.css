@@ -1,0 +1,34 @@
+/*=================== FONTS =========================
+==============================================================*/
+@font-face {
+  font-family: "ITC_Avant_Bold";
+  src: url("../fonts/Avant Garde/AvantGardGothEF-Bold.otf"); }
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("../fonts/Proxima Nova/ProximaNova-Bold.otf"); }
+@font-face {
+  font-family: "Proxima_Nova_Regular";
+  src: url("../fonts/Proxima Nova/ProximaNova-Regular.otf"); }
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham/Gotham Bold.otf"); }
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham/Gotham Book.otf"); }
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../fonts/Gotham/Gotham Medium.otf"); }
+@font-face {
+  font-family: "ITC_Avant-Bold";
+  src: url("../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bold.otf"); }
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/Open Sans/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url("../fonts/Bebas Neue/BebasNeue.otf"); }
+
+/*# sourceMappingURL=fonts.css.map */

@@ -1,54 +1,6 @@
-/*=================== FONTS =========================
-==============================================================*/
-@font-face {
-  font-family: "ITC_Avant_Bold";
-  src: url("../fonts/Avant Garde/AvantGardGothEF-Bold.otf");    
-}
 
-@font-face {
-  font-family: "Proxima_Nova_Bold";
-  src: url("../fonts/Proxima Nova/ProximaNova-Bold.otf");    
-}
-
-@font-face {
-  font-family: "Proxima_Nova_Regular";
-  src: url("../fonts/Proxima Nova/ProximaNova-Regular.otf");    
-}
-
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url("../fonts/Gotham/Gotham Bold.otf");
-}
-
-@font-face {
-  font-family: "Gotham-Book";
-  src: url("../fonts/Gotham/Gotham Book.otf");
-}
-
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url("../fonts/Gotham/Gotham Medium.otf");
-}
-
-@font-face {
-  font-family: "ITC_Avant-Bold";
-  src: url("../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bold.otf");
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/Open Sans/OpenSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/Open Sans/OpenSans-Regular.ttf");
-}
-
-/*=================== HOMEPAGE STYLES =========================
-==============================================================*/
-
-/*============== HEADER ======================*/
+/*============== HEADER ======================
+============================================*/
 header {
   .header_upheader {
     background-color: #363636;
@@ -75,7 +27,8 @@ header {
         border-radius: 0px;
         font-family: "Gotham-Book";
         font-size: 0.8571em;
-        margin-right: 10px;      
+        margin-right: 10px;
+        color: #389fbd;       
       }
       input:focus {
         outline: none;
@@ -179,7 +132,8 @@ header {
 }
 /* /======= END HEADER */
 
-/* VERTICAL SOCIAL NETWORKS */
+/*=========== VERTICAL SOCIAL NETWORKS =============
+==================================================*/
 .counterSocialNet {
   position: absolute;
   z-index: 10;
@@ -219,8 +173,10 @@ header {
     }
   }
 }
+/* /======= END VERTICAL SOCIAL NETWORKS */
 
-/*========== BUTTONS STYLES ==========*/
+/*=============== BUTTONS STYLES ==========
+=========================================*/
 .transparentButton {
   background-color: rgba(255,255,255,0.5);
   color: #ad45c7;
@@ -257,10 +213,24 @@ header {
   border: 2px solid #ad45c7;
   outline: none;
 }
+/* /======= END BUTTONS STYLES */
 
-/*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
+/*============ COLORS FOR ROLLBOARD BEST SELLER ===========
+=========================================================*/
+.redboard { background-color: #a30001;}
+.blueboard { background-color: #1f66ae;}
+.yellowboard { background-color: #ffc000;}
+.blackboard { background-color: #000;}
+.whiteboard { background-color: #e4e4e4; }
+
+
+
+/*============== HOMEPAGE STYLES ======================================
+=====================================================================*/
 #home {
+  /*================= SECTION CAROUSEL ================================*/
   .home_carousel {
+    /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
     #firstCarousel {
       max-height: 672px;
       height: 93vh;
@@ -320,6 +290,108 @@ header {
         .glyphicon-chevron-right {
           top: 68%;
         }
+      }
+    }
+  }
+  .home_bestseller {
+    text-align: center;
+    padding-top: 15px;
+    height: 100vh;
+    max-height: 689px;;
+    .container-fluid {
+      h2 {
+        font-family: "ITC_Avant_Bold";
+        color: #000;
+        font-size: 2.7857em;
+        margin-bottom: 45px;
+      }
+      #secondCarousel {
+        .carousel-inner {
+          text-align: center;
+          .item {
+            div {
+              background-color: #fff;
+              .container {
+                padding-left: 120px;
+                .row {
+                  div {
+                    text-align: left;
+                    h3 {
+                      font-family: "Gotham-Bold";
+                      color: #000;
+                      font-size: 1.7857em;
+                    }
+                    p:nth-child(3) {
+                      color: #2b949a;
+                      span {
+                        background: url("../img/icn/home_bestseller_freeshippingIcon.png") no-repeat;
+                        background-size: 100%;
+                        width: 25px;
+                        height: 24px;
+                        display: inline-block;
+                        margin-bottom: -5px;
+                        margin-right: 10px;
+                      }
+                    }
+                    .home_bestseller_secondCarousel_color {
+                      p {
+                        font-family: "Gotham-Bold";
+                        color: #000;
+                        font-size: 1.0714em;
+                        margin-right: 10px;
+                        display: inline-block;
+                        margin-top: 0px;
+                      }
+                      span {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 5px;
+                        margin-bottom: -10px;
+                        a {
+                          width: 30px;
+                          height: 30px;
+                          display:inline-block;
+                          margin-bottom: -10px;
+                        }
+                      }
+                    }
+                    .home_bestseller_secondCarousel_price {
+                      p {
+                        color: #414141;
+                        font-family: "Bebas-Neue";
+                        font-size: 3.9285em;
+                        display: inline-block;
+                        margin-right: 10px;
+                      }
+                      p:last-child {
+                        color: #414141;
+                        font-family: "Bebas-Neue";
+                        font-size: 1.5714em;
+                        text-decoration: line-through;
+                        display: inline-block;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .carousel-control {
+          span:first-child {
+            color: #e25a95;
+            opacity: 0.8;
+          }
+        }
+        .home_bestseller_secondCarousel_right {
+          right: 0;
+          left: auto;
+        }
+      }
+      a.home_bestseller_buttonSeemore {
+        margin-top: 55px;
       }
     }
   }
