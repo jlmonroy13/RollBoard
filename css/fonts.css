@@ -28,6 +28,9 @@
   font-family: "Open Sans Regular";
   src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
 @font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../fonts/Open Sans/OpenSans-Semibold.ttf"); }
+@font-face {
   font-family: "Bebas-Neue";
   src: url("../fonts/Bebas Neue/BebasNeue.otf"); }
 

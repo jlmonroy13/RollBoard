@@ -395,6 +395,59 @@ header {
       }
     }
   }
+  .home_features {
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 667px;;
+    padding-top: 20px;
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-family: "ITC_Avant_Bold";
+      font-size: 2.7857em;
+      border-bottom: 1px solid #d8d8d8;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+    }
+    .container {
+      .row {
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+        div {
+          text-align: center;
+          span {
+            background:url("../img/icn/home_features_Icons.png");
+            display: inline-block;
+          }
+          .home_features_icon1 { background-position: 0px -408px; width: 123px; height: 126px;}
+          .home_features_icon2 { background-position: 0px -266px; width: 109px; height: 132px;}
+          .home_features_icon3 { background-position: 0px -760px; width: 92px; height: 99px;}
+          .home_features_icon4 { background-position: 0px 0px; width: 168px; height: 126px;}
+          .home_features_icon5 { background-position: 0px -869px; width: 144px; height: 144px;}
+          .home_features_icon6 { background-position: 0px -1023px; width: 152px; height: 91px;}
+          .home_features_icon7 { background-position: 0px -136px; width: 120px; height: 120px;}
+          .home_features_icon8 { background-position: 0px -544px; width: 206px; height: 206px;}
+          h4 {
+            color: #fff;
+            font-family: "Open Sans Semibold";
+            font-size: 1.2857em;
+            padding: 0 2vw;
+          }
+        }
+      }
+    }
+  }
+  .home_celebrities {
+    padding-top: 20px; 
+    h2 {
+      color: #000;
+      font-family: "ITC_Avant_Bold";
+      font-size: 2.7857em;
+      text-align: center;
+    }
+  }
 }
     
 
