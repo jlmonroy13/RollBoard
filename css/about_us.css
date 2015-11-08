@@ -1,11 +1,13 @@
 /*=================== ABOUT US STYLES =========================
 ==============================================================*/
+/*============== BANNER ======================
+============================================*/
 .banner {
   background-size: 100%;
   max-height: 317px;
   height: 24vw;
   width: 100%;
-  background: url("../img/bckg/banner_redrollboard.jpg");
+  background: url("../img/bckg/banner_redrollboard.jpg") no-repeat;
   margin-top: -120px; }
   .banner h2 {
     font-family: "ITC_Avant_Bold";
@@ -13,6 +15,9 @@
     font-size: 2.5em;
     margin-top: 18%; }
 
+/* /======= END BANNER */
+/*============== CONTENT ======================
+============================================*/
 .aboutus_content {
   padding-top: 100px;
   position: relative; }
@@ -31,7 +36,7 @@
     margin-top: 0px; }
   .aboutus_content .container p:nth-child(3) {
     margin-bottom: 250px; }
-  .aboutus_content img {
+  .aboutus_content img.aboutus_content_redrollboard {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -40,6 +45,9 @@
     overflow: hidden;
     box-sizing: border-box; }
 
+/* /======= END CONTENT */
+/*============== FOOTER ======================
+============================================*/
 footer .container-fluid {
   background-color: #252525; }
   footer .container-fluid .row .col-md-3:first-child {
@@ -115,25 +123,37 @@ footer .container-fluid {
     margin-left: 65px;
     margin-top: -25px;
     margin-bottom: 10px; }
-footer .footer_downfooter .container-fluid {
-  background-color: #1c1c1c;
-  height: 45px; }
-  footer .footer_downfooter .container-fluid p {
-    font-family: "Open Sans Regular";
-    font-size: 1em;
-    color: #a0a0a0;
-    margin-left: 65px;
-    padding-top: 13px;
-    margin-bottom: 0px;
-    display: inline-block;
-    float: left; }
-  footer .footer_downfooter .container-fluid ul {
-    display: inline-block;
-    float: right;
-    padding-right: 50px;
-    margin-bottom: 0px; }
-    footer .footer_downfooter .container-fluid ul li {
+footer .footer_downfooter {
+  position: relative; }
+  footer .footer_downfooter .container-fluid {
+    background-color: #1c1c1c;
+    height: 45px; }
+    footer .footer_downfooter .container-fluid p {
+      font-family: "Open Sans Regular";
+      font-size: 1em;
+      color: #a0a0a0;
+      margin-left: 65px;
       padding-top: 13px;
-      display: inline-block; }
+      margin-bottom: 0px;
+      display: inline-block;
+      float: left; }
+    footer .footer_downfooter .container-fluid ul {
+      display: inline-block;
+      float: right;
+      padding-right: 50px;
+      margin-bottom: 0px; }
+      footer .footer_downfooter .container-fluid ul li {
+        padding-top: 13px;
+        display: inline-block; }
+  footer .footer_downfooter a span {
+    background: url("../img/icn/Up_Arrow.jpg");
+    background-size: 100%;
+    height: 28px;
+    width: 29px;
+    position: absolute;
+    right: 0px;
+    bottom: 6px; }
+
+/* /======= END FOOTER */
 
 /*# sourceMappingURL=about_us.css.map */

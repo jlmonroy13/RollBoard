@@ -1,12 +1,15 @@
 /*=================== ABOUT US STYLES =========================
 ==============================================================*/
 
+/*============== BANNER ======================
+============================================*/
+
 .banner {
 	background-size: 100%;
 	max-height: 317px;
 	height: 24vw;
 	width: 100%;
-	background: url("../img/bckg/banner_redrollboard.jpg");
+	background: url("../img/bckg/banner_redrollboard.jpg") no-repeat;
 	margin-top: -120px;
 	h2 {
 		font-family: "ITC_Avant_Bold";
@@ -16,6 +19,10 @@
 	}
 }
 
+/* /======= END BANNER */
+
+/*============== CONTENT ======================
+============================================*/
 .aboutus_content {
 	padding-top: 100px;
 	position: relative;
@@ -39,7 +46,7 @@
 			margin-bottom: 250px;
 		}		
 	}
-	img {
+	img.aboutus_content_redrollboard {
 			position: absolute;	
 			bottom: 0;
 			right: 0;
@@ -49,6 +56,11 @@
 			box-sizing: border-box;
 	}
 }
+
+/* /======= END CONTENT */
+
+/*============== FOOTER ======================
+============================================*/
 
 footer {
 	.container-fluid {
@@ -150,9 +162,10 @@ footer {
 		}
 	}
 	.footer_downfooter {
-		.container-fluid {
+		position: relative;		
+		.container-fluid {				
 			background-color: #1c1c1c;
-			height: 45px;			
+			height: 45px;
 			p {
 				font-family: "Open Sans Regular";
 				font-size: 1em;
@@ -173,7 +186,20 @@ footer {
 					display: inline-block;
 				}
 			}
+
 		}
-		
+		a {
+			span {
+			background: url("../img/icn/Up_Arrow.jpg");
+			background-size: 100%;
+			height: 28px;
+            width: 29px;
+            position: absolute;
+            right: 0px;
+        	bottom: 6px;
+			}
+		}
 	}
 }
+
+/* /======= END FOOTER */
