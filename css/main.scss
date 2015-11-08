@@ -20,6 +20,11 @@
   src: url("../fonts/Gotham/Gotham Bold.otf");
 }
 
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham/Gotham Book.otf");
+}
+
 /*=================== HOMEPAGE STYLES =========================
 ==============================================================*/
 
@@ -28,6 +33,7 @@ header {
   .header_upheader {
     background-color: #363636;
     text-align: right;
+    height: 50px;
     p {
       color: #696969;
       font-family: "Gotham-Bold";
@@ -36,48 +42,163 @@ header {
     }
     form {
       display: inline-block;
+      width: 30%;
       input {
-        width: 24%;
+        width: 70%;
         display: inline-block;
+        background: transparent;
+        border: 2px solid #696969;
+        border-radius: 0px;
+        font-family: "Gotham-Book";
+        font-size: 0.8571em;
+        margin-right: 10px;      
+      }
+      input:focus {
+        outline: none;
+      }
+      input::-webkit-input-placeholder {
+        color: #696969;
+      }
+
+      input:-moz-placeholder { /* Firefox 18- */
+        color: #696969;
+      }
+
+      input::-moz-placeholder {  /* Firefox 19+ */
+        color: #696969;
+      }
+
+      input:-ms-input-placeholder {  
+        color: #696969; 
+      }
+      button {
+        color: #389fbd;
+        border: 2px solid #389fbd;
+        background: transparent;
+        border-radius: 20px;
+        padding: 4px 15px;
+      }
+      button:hover {
+        color: #fff;
+        border: 2px solid #389fbd;
+        background: #389fbd;
+        border-radius: 20px;
+        padding: 4px 15px;
+      }
+      button:focus {
+        outline: none;
+      }
+    }
+    form:focus {
+      outline: none;
+    }
+  }
+  nav.navbar {
+    height: 120px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 0px;
+    z-index: 10;
+    .container {
+      .navbar-header {
+        .navbar-brand {
+          img {
+            margin-top: 20px;
+          }
+        }
+      }
+      .collapse {
+        ul.nav {
+          margin-top: 34px;
+          li {
+            a {
+              font-family: "Gotham-Bold";
+              font-size: 0.9285em;
+              color: #787878;
+              .header_navbar_searchIcon {
+                background: url("../img/icn/header_nav_searchIcon.png");
+                background-size: 100%;
+                height: 13px;
+                width: 13px;
+                display: inline-block;
+                opacity: 0.6;
+              }
+              .header_navbar_calendarIcon {
+                background: url("../img/icn/header_nav_calendarIcon.png");
+                background-size: 100%;
+                height: 32px;
+                width: 28px;
+                display: inline-block;
+                opacity: 0.6;
+              }
+              .header_navbar_searchIcon:hover,
+              .header_navbar_calendarIcon:hover {
+                opacity: 1;
+              }
+            }
+            a:hover {
+              color: #ad45c7;
+              background: transparent;
+            }
+          }
+          li:last-child {
+            a {
+              padding-top: 3px;
+            }
+          }
+        }
       }
     }
   }
 }
+/* /======= END HEADER */
 
+/* VERTICAL SOCIAL NETWORKS */
+.counterSocialNet {
+  position: absolute;
+  float: right;
+  z-index: 10;
+}
 
 /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
-#firstCarousel {
-  height: 672px;
-  margin-bottom: 60px;
-  .carousel-inner {
-    /* Declare heights because of positioning of img element */
-    .item {
-      height: 672px;
-      background-color: #FFF;
-      div {
-        background-size: 100%;
-        max-height: 672px;
-        height: 80vh;
-        width: 100%;
+#home {
+  .home_carousel {
+    margin-top: -120px;
+  }
+}
+  #firstCarousel {
+    height: 672px;
+    margin-bottom: 60px;
+    .carousel-inner {
+      /* Declare heights because of positioning of img element */
+      .item {
+        height: 672px;
+        background-color: #FFF;
+        div {
+          background-size: 100%;
+          max-height: 672px;
+          height: 80vh;
+          width: 100%;
+        }
+        .first-slide {
+          background: url("../img/bckg/home_carousel_img1.jpg");
+        }
+        .second-slide {
+          background: url("../img/bckg/home_carousel_img2.jpg");
+        }
+        .third-slide {
+          background: url("../img/bckg/home_carousel_img3.jpg");
+        }
       }
-      .first-slide {
-        background: url("../img/bckg/home_carousel_img1.jpg");
-      }
-      .second-slide {
-        background: url("../img/bckg/home_carousel_img2.jpg");
-      }
-      .third-slide {
-        background: url("../img/bckg/home_carousel_img3.jpg");
-      }
-    }
-    .container {
-      /* Since positioning the image, we need to help out the caption */
-      .carousel-caption {
-        z-index: 10;
+      .container {
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+          z-index: 10;
+        }
       }
     }
   }
-}
 
 
 
