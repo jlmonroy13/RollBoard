@@ -21,6 +21,12 @@
 @font-face {
   font-family: "ITC_Avant-Bold";
   src: url("../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bold.otf"); }
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/Open Sans/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
 /*=================== HOMEPAGE STYLES =========================
 ==============================================================*/
 /*============== HEADER ======================*/
