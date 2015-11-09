@@ -1,0 +1,79 @@
+/*=============== CONTACT STYLES =====================
+=====================================================*/
+
+#contact {
+	.contact_form {
+		position: relative;
+		.container {
+			h3 {
+				color: #389fbd;
+				font-family: "Proxima_Nova_Bold";
+				font-size: 1.9285em;
+				margin-top: 70px;
+				margin-bottom: 40px;
+			}
+			div:nth-child(2) {
+				a {
+					font-family: "Proxima_Nova_Regular";
+					font-size: 1.3571em;
+					display: block;
+				}
+				a:first-child { color: #5d5d5d;}
+				a:nth-child(2) { color: #ad45c7; margin-bottom: 25px; }
+				.contact_form_googlemaps {
+					position: relative;
+					padding-bottom: 75%; // This is the aspect ratio
+					height: 0;
+					overflow: hidden;
+					iframe {
+						position: absolute;
+				        top: 0;
+				        left: 0;
+				        width: 85% !important;
+				        height: 75% !important;
+					}
+				}
+				p:nth-child(4) {
+					margin-top: -80px;
+					margin-bottom: 0;
+					font-family: "Proxima_Nova_Bold";
+					font-size: 1.07142em;
+					color: #5d5d5d;
+				}
+				p:last-child {
+					margin: 0px;
+					font-family: "Proxima_Nova_Bold";
+					font-size: 1.07142em;
+					color: #5d5d5d;
+				}
+			}
+			div:last-child {
+				form {
+					margin-top: 30px;
+					div {
+						input {
+							border-radius: 0px;
+							font-family: "Proxima_Nova_Regular";
+						}
+						label {
+							color: #6a6a6a;
+							font-family: "Proxima_Nova_Regular";
+							font-size: 1.1428em;
+						}
+						span {
+							color: #6a6a6a;
+							font-family: "Proxima_Nova_Regular";
+							font-size: 1.1428em;
+						}
+					}
+					button {
+					    padding: 15px 50px;
+					    float: right;
+					    margin-bottom: 90px;
+					}
+				}
+			}
+		}
+	}
+}
+
