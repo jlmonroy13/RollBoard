@@ -754,5 +754,12 @@ footer .footer_downfooter {
 
 /*/////////////////// SHOP STYLES /////////////////////
 /////////////////////////////////////////////////////*/
+/*=================== GALLERY STYLES =========================
+==============================================================*/
+#gallery .gallery_contain .container-fluid {
+  padding: 0; }
+  #gallery .gallery_contain .container-fluid .row div {
+    padding: 0;
+    margin: 0; }
 
 /*# sourceMappingURL=main.css.map */
