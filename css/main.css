@@ -675,14 +675,10 @@ footer .footer_downfooter {
     color: #5d5d5d;
     line-height: 30px;
     margin-top: 25px;
-<<<<<<< HEAD
     padding-right: 250px; }
     @media (max-width: 992px) {
       .aboutus_content .container p {
         padding-right: 20px; } }
-=======
-    padding-right: 140px; }
->>>>>>> f9d4643722f45d30c240731eb03380206fd1890e
   .aboutus_content .container p:first-child {
     font-family: "Proxima_Nova_Bold";
     font-size: 2em;
@@ -695,18 +691,12 @@ footer .footer_downfooter {
     position: absolute;
     bottom: 0;
     right: 0;
-<<<<<<< HEAD
     height: 30vw;
     max-height: 537px;
     min-height: 370px;
     overflow: hidden;
     box-sizing: border-box;
     z-index: -1; }
-=======
-    max-height: 100%;
-    width: 30%;
-    overflow: hidden; }
->>>>>>> f9d4643722f45d30c240731eb03380206fd1890e
 
 /* /======= END CONTENT */
 /*//////////////////// END ABOUT US STYLES /////////////////////
