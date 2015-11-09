@@ -1,4 +1,5 @@
 
+
 /*============== HEADER ======================
 ============================================*/
 header {
@@ -15,10 +16,19 @@ header {
       font-family: "Gotham-Bold";
       font-size: 0.8571em;
       display: inline-block;
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
     form {
       display: inline-block;
       width: 30%;
+      @media (max-width: 991px){
+        width: 40%;
+      }
+      @media (max-width: 700px){
+        width: 100%;
+      }
       input {
         width: 70%;
         display: inline-block;
@@ -28,7 +38,7 @@ header {
         font-family: "Gotham-Book";
         font-size: 0.8571em;
         margin-right: 10px;
-        color: #389fbd;       
+        color: #389fbd;  
       }
       input:focus {
         outline: none;
@@ -80,15 +90,52 @@ header {
     margin-top: 50px;
     .container {
       .navbar-header {
+        @media (max-width: 450px) {
+          margin-top: -118px;
+        }
         .navbar-brand {
+          @media (max-width: 450px) {
+            margin-top: -43px;
+          }
           img {
             margin-top: 20px;
+            @media (max-width: 1199px) {
+              margin-top: 30px;
+              width: 70%;
+            }
+            @media (max-width: 992px) {
+              margin-top: 0px;
+            }
+            @media (max-width: 767px) {
+              margin-top: 30px;
+            }
+            @media (max-width: 450px) {
+              margin-top: -47px;
+            }
+          }
+        }
+        button.navbar-toggle {
+          @media (max-width: 767px) {
+            margin-top: 40px;
+            padding-bottom: 40px;
+          }
+          @media (max-width: 450px) {
+            margin-top: 150px;
+          }
+          span {
+            background-color: #fff;
           }
         }
       }
       .collapse {
         ul.nav {
           margin-top: 34px;
+          @media (max-width: 1199px) {
+            margin-top: 0px;
+          }
+          @media (max-width: 767px) {
+            background-color: rgba(0,0,0,0.7);
+          }
           li {
             a {
               font-family: "Gotham-Bold";
@@ -263,13 +310,13 @@ footer {
     }
     a {
       span {
-      background: url("../img/icn/Up_Arrow.jpg");
-      background-size: 100%;
-      height: 28px;
-            width: 29px;
-            position: absolute;
-            right: 0px;
-          bottom: 6px;
+        background: url("../img/icn/Up_Arrow.jpg");
+        background-size: 100%;
+        height: 28px;
+        width: 29px;
+        position: absolute;
+        right: 0px;
+        bottom: 6px;
       }
     }
   }
@@ -372,17 +419,33 @@ footer {
 /*============== BANNER RED ROLLBOARD ======================
 ==========================================================*/
 .banner {
+  background: url("../img/bckg/banner_redrollboard.jpg") no-repeat;
   background-size: cover;
   max-height: 317px;
+  min-height: 300px;
   height: 24vw;
   width: 100%;
-  background: url("../img/bckg/banner_redrollboard.jpg") no-repeat;
   margin-top: -120px;
+  @media (max-width: 1097px) {
+    background: url("../img/bckg/banner_redrollboard_1097px.jpg") no-repeat;
+    background-size: cover;
+  }
+  @media (max-width: 800px) {
+    background: url("../img/bckg/banner_redrollboard_800px.jpg") no-repeat;
+    background-size: cover;
+  }
+  @media (max-width: 650px) {
+    background: url("../img/bckg/banner_redrollboard_650px.jpg") no-repeat;
+    background-size: cover;
+  }
   h2 {
     font-family: "ITC_Avant_Bold";
     color: white;
     font-size:  2.5em;  
     margin-top: 18%;
+    @media (max-width: 991px) {
+      margin-top: 190px;
+    }
   }
 }
 /* /======= END BANNER */
@@ -673,6 +736,9 @@ footer {
       line-height: 30px;
       margin-top: 25px;
       padding-right: 250px;
+      @media (max-width: 992px) {
+        padding-right: 20px;
+      }
     }
     p:first-child {
       font-family: "Proxima_Nova_Bold";
@@ -689,10 +755,12 @@ footer {
       position: absolute; 
       bottom: 0;
       right: 0;
-      max-height: 100%; 
-      height: 537px;
+      height: 30vw;
+      max-height: 537px;
+      min-height: 370px;; 
       overflow: hidden;
       box-sizing: border-box;
+      z-index: -1;
   }
 }
 /* /======= END CONTENT */
@@ -789,6 +857,14 @@ footer {
   .container {
     div {
       margin-top: 20px;
+      .row {
+        @media (max-width: 800px) {
+          margin-right: 25px;
+        }
+        @media (max-width: 600px) {
+          margin-left: 0px;
+        }
+      }
       .faq_question {
         .col-md-1 {
           padding-right: 0;                 
@@ -1107,4 +1183,6 @@ footer {
 }
 /*/////////////////// END PRODUCT DETAIL STYLES ///////////////////
 ////////////////////////////////////////////////////////////////*/
+
+
 
