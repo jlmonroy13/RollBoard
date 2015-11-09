@@ -1,0 +1,58 @@
+/*=============== SHOP STYLES =====================
+=====================================================*/
+#shop .shop_content {
+  position: relative;
+  padding-top: 80px; }
+  #shop .shop_content .container {
+    padding-left: 85px; }
+    #shop .shop_content .container .row {
+      margin-bottom: 110px; }
+      #shop .shop_content .container .row div {
+        text-align: left; }
+        #shop .shop_content .container .row div h3 {
+          font-family: "Gotham-Bold";
+          color: #000;
+          font-size: 1.7857em; }
+        #shop .shop_content .container .row div p:nth-child(3) {
+          color: #2b949a; }
+          #shop .shop_content .container .row div p:nth-child(3) span {
+            background: url("../img/icn/home_bestseller_freeshippingIcon.png") no-repeat;
+            background-size: 100%;
+            width: 25px;
+            height: 24px;
+            display: inline-block;
+            margin-bottom: -5px;
+            margin-right: 10px; }
+        #shop .shop_content .container .row div .home_bestseller_secondCarousel_color p {
+          font-family: "Gotham-Bold";
+          color: #000;
+          font-size: 1.0714em;
+          margin-right: 10px;
+          display: inline-block;
+          margin-top: 0px; }
+        #shop .shop_content .container .row div .home_bestseller_secondCarousel_color span {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 5px;
+          margin-bottom: -10px; }
+          #shop .shop_content .container .row div .home_bestseller_secondCarousel_color span a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-bottom: -10px; }
+        #shop .shop_content .container .row div .home_bestseller_secondCarousel_price p {
+          color: #414141;
+          font-family: "Bebas-Neue";
+          font-size: 3.9285em;
+          display: inline-block;
+          margin-right: 10px; }
+        #shop .shop_content .container .row div .home_bestseller_secondCarousel_price p:last-child {
+          color: #414141;
+          font-family: "Bebas-Neue";
+          font-size: 1.5714em;
+          text-decoration: line-through;
+          display: inline-block; }
+
+/*# sourceMappingURL=shop.css.map */

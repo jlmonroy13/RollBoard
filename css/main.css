@@ -179,7 +179,13 @@ header nav.navbar {
   background-color: #000; }
 
 .whiteboard {
-  background-color: #e4e4e4; }
+  background-color: #dcdbe0; }
+
+.pinkboard {
+  background-color: #c401a5; }
+
+.aquaboard {
+  background-color: #01c2c3; }
 
 /*============== HOMEPAGE STYLES ======================================
 =====================================================================*/
