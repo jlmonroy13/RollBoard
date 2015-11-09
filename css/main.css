@@ -283,22 +283,43 @@ footer .footer_downfooter {
   footer .footer_downfooter .container-fluid {
     background-color: #1c1c1c;
     height: 45px; }
+    @media (max-width: 813px) {
+      footer .footer_downfooter .container-fluid {
+        height: 80px;
+        text-align: center; } }
+    @media (max-width: 474px) {
+      footer .footer_downfooter .container-fluid {
+        padding-right: 0; } }
+    @media (max-width: 458px) {
+      footer .footer_downfooter .container-fluid {
+        height: 110px; } }
+    @media (max-width: 361px) {
+      footer .footer_downfooter .container-fluid {
+        height: 135px; } }
     footer .footer_downfooter .container-fluid p {
       font-family: "Open Sans Regular";
       font-size: 1em;
       color: #a0a0a0;
-      margin-left: 65px;
+      margin-left: 10%;
       padding-top: 13px;
       margin-bottom: 0px;
       display: inline-block;
       float: left; }
+      @media (max-width: 813px) {
+        footer .footer_downfooter .container-fluid p {
+          float: none;
+          margin-right: 10%; } }
     footer .footer_downfooter .container-fluid ul {
       display: inline-block;
       float: right;
       padding-right: 50px;
       margin-bottom: 0px; }
+      @media (max-width: 813px) {
+        footer .footer_downfooter .container-fluid ul {
+          float: none;
+          clear: left; } }
       footer .footer_downfooter .container-fluid ul li {
-        padding-top: 13px;
+        padding-top: 10px;
         display: inline-block; }
   footer .footer_downfooter a span {
     background: url("../img/icn/Up_Arrow.jpg");
