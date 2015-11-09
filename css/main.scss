@@ -132,6 +132,150 @@ header {
 }
 /* /======= END HEADER */
 
+/*============== FOOTER ======================
+============================================*/
+
+footer {
+  .container-fluid {
+    background-color: #252525;
+    .row {
+      .col-md-3:first-child {
+        padding-left: 75px;
+        p {
+          font-family: "Open Sans Bold";
+          color: #777777;
+          font-size: 0.85em;
+          padding-top: 45px;
+          margin-bottom: 10px;
+        }
+        div {
+          font-family: "Open Sans Regular";
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #343434;         
+          a {
+            display: block;
+            text-decoration: none;            
+            color: #a0a0a0;
+            font-size: 0.92em;
+          }
+          span {
+            font-size: 0.78em;
+            color: #6b6b6b;
+          }
+        }
+      }
+      .col-md-3:nth-child(2) {
+        p {
+          font-family: "Open Sans Bold";
+          color: #777777;
+          font-size: 0.85em;
+          padding-top: 45px;
+          margin-bottom: 30px;
+        }
+        a {
+          display: block;
+          text-decoration: none;            
+          color: #a0a0a0;
+          font-size: 0.92em;
+          margin-top: 17px;
+          background-color: #232323;
+          border: none;
+          padding: 15px 0px 15px 20px;
+          text-align: left;
+        }
+
+      }
+      .col-md-3:nth-child(3) {
+        p {
+          font-family: "Open Sans Bold";
+          color: #777777;
+          font-size: 0.85em;
+          padding-top: 45px;
+          margin-bottom: 15px;
+        }
+        ul {
+          padding-left: 0px;
+          li {
+            list-style: none;
+            font-family: "Open Sans Regular";           
+            padding: 8px 0px 8px 0px;
+            border-bottom: 1px solid #343434;
+            a {
+              text-decoration: none;
+              color: #a0a0a0;             
+            }
+          }
+        }
+      }
+      .col-md-3:nth-child(4) {
+        padding-right: 75px;
+        h5 {
+          font-family: "Gotham-Bold";
+          font-size: 1.7em;
+          color: white;
+          padding-top: 45px;
+        }
+        p {
+          font-family: "Open Sans Bold";
+          color: #777777;
+          font-size: 0.85em;
+        }
+      }
+    }
+    .footer_verifiedicons {
+      background: url("../img/bckg/footer_verifiedicons.png");
+      background-size: 100%;
+      height: 66px;
+            width: 448px;
+            display: block;
+            margin-left: 65px;
+            margin-top: -25px;
+            margin-bottom: 10px;
+    }
+  }
+  .footer_downfooter {
+    position: relative;   
+    .container-fluid {        
+      background-color: #1c1c1c;
+      height: 45px;
+      p {
+        font-family: "Open Sans Regular";
+        font-size: 1em;
+        color: #a0a0a0;
+        margin-left: 65px;
+        padding-top: 13px;
+        margin-bottom: 0px; 
+        display: inline-block;
+        float: left;  
+      } 
+      ul {
+      display: inline-block;
+      float: right;
+      padding-right: 50px;
+      margin-bottom: 0px; 
+        li {
+          padding-top: 13px;
+          display: inline-block;
+        }
+      }
+
+    }
+    a {
+      span {
+      background: url("../img/icn/Up_Arrow.jpg");
+      background-size: 100%;
+      height: 28px;
+            width: 29px;
+            position: absolute;
+            right: 0px;
+          bottom: 6px;
+      }
+    }
+  }
+}
+/* /======= END FOOTER */
+
 /*=========== VERTICAL SOCIAL NETWORKS =============
 ==================================================*/
 .counterSocialNet {
@@ -225,6 +369,23 @@ header {
 .pinkboard { background-color: #c401a5; }
 .aquaboard { background-color: #01c2c3; }
 
+/*============== BANNER RED ROLLBOARD ======================
+==========================================================*/
+.banner {
+  background-size: cover;
+  max-height: 317px;
+  height: 24vw;
+  width: 100%;
+  background: url("../img/bckg/banner_redrollboard.jpg") no-repeat;
+  margin-top: -120px;
+  h2 {
+    font-family: "ITC_Avant_Bold";
+    color: white;
+    font-size:  2.5em;  
+    margin-top: 18%;
+  }
+}
+/* /======= END BANNER */
 
 
 /*============== HOMEPAGE STYLES ======================================
@@ -494,7 +655,288 @@ header {
     }
   }
 }
+/*//////////////// FIN HOMEPAGE STYLES ////////////////////////////////
+=====================================================================*/
     
+/*=================== ABOUT US STYLES =========================
+==============================================================*/
+/*============== CONTENT ======================
+============================================*/
+.aboutus_content {
+  padding-top: 100px;
+  position: relative;
+  .container {
+    p {
+      font-family: "Proxima_Nova_Regular";
+      font-size: 1.2857em;
+      color: #5d5d5d;
+      line-height: 30px;
+      margin-top: 25px;
+      padding-right: 250px;
+    }
+    p:first-child {
+      font-family: "Proxima_Nova_Bold";
+      font-size: 2em;
+      color: #389fbd;
+      line-height: 34px;
+      margin-top: 0px;
+    }
+    p:nth-child(3) {
+      margin-bottom: 250px;
+    }   
+  }
+  img.aboutus_content_redrollboard {
+      position: absolute; 
+      bottom: 0;
+      right: 0;
+      max-height: 100%; 
+      height: 537px;
+      overflow: hidden;
+      box-sizing: border-box;
+  }
+}
+/* /======= END CONTENT */
+/*//////////////////// END ABOUT US STYLES /////////////////////
+//////////////////////////////////////////////////////////////*/
+
+/*=============== CONTACT STYLES =====================
+=====================================================*/
+#contact {
+  .contact_form {
+    position: relative;
+    .container {
+      h3 {
+        color: #389fbd;
+        font-family: "Proxima_Nova_Bold";
+        font-size: 1.9285em;
+        margin-top: 70px;
+        margin-bottom: 40px;
+      }
+      div:nth-child(2) {
+        a {
+          font-family: "Proxima_Nova_Regular";
+          font-size: 1.3571em;
+          display: block;
+        }
+        a:first-child { color: #5d5d5d;}
+        a:nth-child(2) { color: #ad45c7; margin-bottom: 25px; }
+        .contact_form_googlemaps {
+          position: relative;
+          padding-bottom: 75%; // This is the aspect ratio
+          height: 0;
+          overflow: hidden;
+          iframe {
+            position: absolute;
+                top: 0;
+                left: 0;
+                width: 85% !important;
+                height: 75% !important;
+          }
+        }
+        p:nth-child(4) {
+          margin-top: -80px;
+          margin-bottom: 0;
+          font-family: "Proxima_Nova_Bold";
+          font-size: 1.07142em;
+          color: #5d5d5d;
+        }
+        p:last-child {
+          margin: 0px;
+          font-family: "Proxima_Nova_Bold";
+          font-size: 1.07142em;
+          color: #5d5d5d;
+        }
+      }
+      div:last-child {
+        form {
+          margin-top: 30px;
+          div {
+            input {
+              border-radius: 0px;
+              font-family: "Proxima_Nova_Regular";
+            }
+            label {
+              color: #6a6a6a;
+              font-family: "Proxima_Nova_Regular";
+              font-size: 1.1428em;
+            }
+            span {
+              color: #6a6a6a;
+              font-family: "Proxima_Nova_Regular";
+              font-size: 1.1428em;
+            }
+          }
+          button {
+              padding: 15px 50px;
+              float: right;
+              margin-bottom: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+/*////////////// END CONTACT STYLES ////////////////////
+//////////////////////////////////////////////////////*/
+
+/*=================== FAQ STYLES ==============================
+==============================================================*/
+/*============== CONTENT ======================
+============================================*/
+
+.faq_content {
+  position: relative;  
+  .container {
+    div {
+      margin-top: 20px;
+      .faq_question {
+        .col-md-1 {
+          padding-right: 0;                 
+          span {
+          height: 40px;
+          width: 40px;
+          background-color: #3897b3;
+          display: inline-block;
+          border-radius: 50%;
+             -moz-border-radius: 50%;
+             -webkit-border-radius: 50%;
+             padding: auto;
+             font-family: "Proxima_Nova_Regular";
+             color: white;
+             font-size: 1.9285em;
+             text-align: center;
+             float: right;             
+          }
+        }
+        .col-md-11 {
+          p {
+            font-family: "Proxima_Nova_Bold";
+            color: #3897b3;
+            font-size: 1.9285em;
+            line-height: 30px;
+          }
+        }
+      }
+      .faq_answer {
+        margin-top: 0;
+        border-width: 1px; 
+        border-bottom-style: dashed; 
+        border-color: #dadada;
+        padding-bottom: 10px;
+        .col-md-2 {
+          padding-right: 0;
+          span {
+          height: 40px;
+          width: 40px;
+          background-color: #6e195d;
+          display: inline-block;
+          border-radius: 50%;
+             -moz-border-radius: 50%;
+             -webkit-border-radius: 50%;
+             padding: auto;
+             font-family: "Proxima_Nova_Regular";
+             color: white;
+             font-size: 1.9285em;
+             text-align: center;
+             float: right;
+          }
+        }
+        .col-md-10 {          
+          p {
+            font-family: "Proxima_Nova_Regular";
+            color: #5d5d5d;
+            font-size: 1.2142em;
+            line-height: 25px;
+          }
+        }
+      }     
+    }
+    div:last-child {
+      .faq_answer {
+        border: none;
+      }
+    }
+  }
+}
+/*//////////////// END FAQ STYLES /////////////////////////////
+/////////////////////////////////////////////////////////////*/
+
+/*=============== SHOP STYLES =====================
+=====================================================*/
+#shop {
+  .shop_content {
+    position: relative;
+    padding-top: 80px;
+    .container {
+      padding-left: 85px;
+      .row {
+        margin-bottom: 110px;
+        div {
+          text-align: left;
+                    h3 {
+            font-family: "Gotham-Bold";
+            color: #000;
+            font-size: 1.7857em;
+                    }
+                    p:nth-child(3) {
+            color: #2b949a;
+            span {
+              background: url("../img/icn/home_bestseller_freeshippingIcon.png") no-repeat;
+              background-size: 100%;
+              width: 25px;
+              height: 24px;
+              display: inline-block;
+              margin-bottom: -5px;
+              margin-right: 10px;
+            }
+                    }
+                    .home_bestseller_secondCarousel_color {
+            p {
+              font-family: "Gotham-Bold";
+              color: #000;
+              font-size: 1.0714em;
+              margin-right: 10px;
+              display: inline-block;
+              margin-top: 0px;
+            }
+            span {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              display: inline-block;
+              margin-right: 5px;
+              margin-bottom: -10px;
+              a {
+                width: 30px;
+                height: 30px;
+                display:inline-block;
+                margin-bottom: -10px;
+              }
+            }
+                    }
+                    .home_bestseller_secondCarousel_price {
+            p {
+              color: #414141;
+              font-family: "Bebas-Neue";
+              font-size: 3.9285em;
+              display: inline-block;
+              margin-right: 10px;
+            }
+            p:last-child {
+              color: #414141;
+              font-family: "Bebas-Neue";
+              font-size: 1.5714em;
+              text-decoration: line-through;
+              display: inline-block;
+            }
+                    }
+        }
+      }
+    }
+  }
+}
+/*/////////////////// SHOP STYLES /////////////////////
+/////////////////////////////////////////////////////*/
 
 
 
