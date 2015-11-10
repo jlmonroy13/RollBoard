@@ -262,7 +262,6 @@ footer {
           padding-left: 4%;         
         }
         @media (max-width: 500px) {
-          clear: left; 
           margin-left: 15%;
           padding: 0; 
           width: 70%;    
@@ -1234,7 +1233,24 @@ footer {
           iframe {
             width: 100%;
             height: 76px;
-
+            @media (max-width: 1199px) {
+              height: 60px;
+            }
+            @media (max-width: 991px) {
+              height: 42px;
+            }
+            @media (max-width: 767px) {
+              height: 85px;
+            }
+            @media (max-width: 680px) {
+              height: 64px;
+            }
+            @media (max-width: 480px) {
+              height: 44px;
+            }
+            @media (max-width: 350px) {
+              height: 25px;
+            }
           }
         }
       }
@@ -1307,10 +1323,30 @@ footer {
               }
             }
             .productdetail_counter {
-              width: 10%;
+              width: 135px;
+              div.input-group {
+                span {
+                  display: table-cell;
+                  button {
+                    background: none;
+                  }
+                  button:focus {
+                    box-shadow: none;
+                    outline: none;
+                    color: #393939;
+                  }
+                }
+                input {
+                  background: none;
+                  border: none;
+                  box-shadow: none;
+                  color: #393939;
+                  font-family: "Gotham-Medium";
+                }
+              }
             }
             a {
-              width: 60%;
+              width: 255px;
             }
             ul {
               padding-left: 0;
@@ -1326,7 +1362,8 @@ footer {
                   }
                   span {
                     font-family: "Bebas-Neue";
-                    font-size: 1.1em;                 
+                    font-size: 1.1em;
+                    display: inline-block;                
                   }
                 }
               }
