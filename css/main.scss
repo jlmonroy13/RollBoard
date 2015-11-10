@@ -652,6 +652,7 @@ footer {
         .glyphicon-chevron-left,
         .glyphicon-chevron-right {
           top: 68%;
+          margin-right: -4px;
         }
       }
     }
@@ -676,13 +677,31 @@ footer {
               background-color: #fff;
               .container {
                 padding-left: 120px;
+                @media (max-width: 767px) {
+                  padding-left: 31vw;
+                }
                 .row {
                   div {
                     text-align: left;
+                    @media (max-width: 599px) {
+                      padding: 0;
+                    }
+                    img {
+                      @media (max-width: 1230px) {
+                        width: 60%;
+                        min-width: 154px;
+                      }
+                      @media (max-width: 767px) {
+                        width: 40%;
+                      }
+                    }
                     h3 {
                       font-family: "Gotham-Bold";
                       color: #000;
                       font-size: 1.7857em;
+                      @media (max-width: 640px) {
+                        font-size: 1.5em;
+                      }
                     }
                     p:nth-child(3) {
                       color: #2b949a;
@@ -694,6 +713,10 @@ footer {
                         display: inline-block;
                         margin-bottom: -5px;
                         margin-right: 10px;
+                        @media (max-width: 599px) {
+                          width: 17px;
+                          height: 16px;
+                        }
                       }
                     }
                     .home_bestseller_secondCarousel_color {
@@ -712,11 +735,23 @@ footer {
                         display: inline-block;
                         margin-right: 5px;
                         margin-bottom: -10px;
+                        @media (max-width: 1050px) {
+                          height: 20px;
+                          width: 20px;
+                        }
+                        @media (max-width: 640px) {
+                          height: 15px;
+                          width: 15px;
+                        }
                         a {
                           width: 30px;
                           height: 30px;
                           display:inline-block;
                           margin-bottom: -10px;
+                          @media (max-width: 1050px) {
+                            height: 20px;
+                            width: 20px;
+                          }
                         }
                       }
                     }
@@ -727,6 +762,10 @@ footer {
                         font-size: 3.9285em;
                         display: inline-block;
                         margin-right: 10px;
+                        @media (max-width: 640px) {
+                          font-size: 3.3571em;
+                          margin-bottom: 0;
+                        }
                       }
                       p:last-child {
                         color: #414141;
@@ -734,6 +773,11 @@ footer {
                         font-size: 1.5714em;
                         text-decoration: line-through;
                         display: inline-block;
+                      }
+                    }
+                    a {
+                      @media (max-width: 992px) {
+                        padding: 10px 18px;
                       }
                     }
                   }
@@ -771,7 +815,7 @@ footer {
       font-size: 2.7857em;
       border-bottom: 1px solid #d8d8d8;
       padding-bottom: 15px;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
     }
     .container {
       .row {
@@ -780,18 +824,9 @@ footer {
         align-items: center;
         div {
           text-align: center;
-          span {
-            background:url("../img/icn/home_features_Icons.png");
-            display: inline-block;
+          img {
+            width: 45%;
           }
-          .home_features_icon1 { background-position: 0px -408px; width: 123px; height: 126px;}
-          .home_features_icon2 { background-position: 0px -266px; width: 109px; height: 132px;}
-          .home_features_icon3 { background-position: 0px -760px; width: 92px; height: 99px;}
-          .home_features_icon4 { background-position: 0px 0px; width: 168px; height: 126px;}
-          .home_features_icon5 { background-position: 0px -869px; width: 144px; height: 144px;}
-          .home_features_icon6 { background-position: 0px -1023px; width: 152px; height: 91px;}
-          .home_features_icon7 { background-position: 0px -136px; width: 120px; height: 120px;}
-          .home_features_icon8 { background-position: 0px -544px; width: 206px; height: 206px;}
           h4 {
             color: #fff;
             font-family: "Open Sans Semibold";
@@ -831,6 +866,9 @@ footer {
           color: #389fbd;
           font-family: "ITC_Avant-Bold";
           font-size: 1.4285em;
+          @media (max-width: 480px) {
+            font-size: 1em;
+          }
         }
       }
     } 
@@ -1086,12 +1124,12 @@ footer {
         margin-bottom: 110px;
         div {
           text-align: left;
-                    h3 {
+          h3 {
             font-family: "Gotham-Bold";
             color: #000;
             font-size: 1.7857em;
-                    }
-                    p:nth-child(3) {
+          }
+          p:nth-child(3) {
             color: #2b949a;
             span {
               background: url("../img/icn/home_bestseller_freeshippingIcon.png") no-repeat;
@@ -1102,8 +1140,8 @@ footer {
               margin-bottom: -5px;
               margin-right: 10px;
             }
-                    }
-                    .home_bestseller_secondCarousel_color {
+          }
+          .home_bestseller_secondCarousel_color {
             p {
               font-family: "Gotham-Bold";
               color: #000;
@@ -1126,8 +1164,8 @@ footer {
                 margin-bottom: -10px;
               }
             }
-                    }
-                    .home_bestseller_secondCarousel_price {
+          }
+          .home_bestseller_secondCarousel_price {
             p {
               color: #414141;
               font-family: "Bebas-Neue";
@@ -1142,7 +1180,7 @@ footer {
               text-decoration: line-through;
               display: inline-block;
             }
-                    }
+          }
         }
       }
     }

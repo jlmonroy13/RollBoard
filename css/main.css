@@ -557,7 +557,8 @@ footer .footer_downfooter {
         width: 3%; }
         #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-left,
         #home .home_carousel #firstCarousel .carousel-control .glyphicon-chevron-right {
-          top: 68%; }
+          top: 68%;
+          margin-right: -4px; }
   #home .home_bestseller {
     text-align: center;
     padding-top: 15px;
@@ -574,12 +575,28 @@ footer .footer_downfooter {
         background-color: #fff; }
         #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container {
           padding-left: 120px; }
+          @media (max-width: 767px) {
+            #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container {
+              padding-left: 31vw; } }
           #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div {
             text-align: left; }
+            @media (max-width: 599px) {
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div {
+                padding: 0; } }
+            @media (max-width: 1230px) {
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div img {
+                width: 60%;
+                min-width: 154px; } }
+            @media (max-width: 767px) {
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div img {
+                width: 40%; } }
             #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div h3 {
               font-family: "Gotham-Bold";
               color: #000;
               font-size: 1.7857em; }
+              @media (max-width: 640px) {
+                #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div h3 {
+                  font-size: 1.5em; } }
             #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div p:nth-child(3) {
               color: #2b949a; }
               #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div p:nth-child(3) span {
@@ -590,6 +607,10 @@ footer .footer_downfooter {
                 display: inline-block;
                 margin-bottom: -5px;
                 margin-right: 10px; }
+                @media (max-width: 599px) {
+                  #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div p:nth-child(3) span {
+                    width: 17px;
+                    height: 16px; } }
             #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color p {
               font-family: "Gotham-Bold";
               color: #000;
@@ -604,23 +625,42 @@ footer .footer_downfooter {
               display: inline-block;
               margin-right: 5px;
               margin-bottom: -10px; }
+              @media (max-width: 1050px) {
+                #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span {
+                  height: 20px;
+                  width: 20px; } }
+              @media (max-width: 640px) {
+                #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span {
+                  height: 15px;
+                  width: 15px; } }
               #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span a {
                 width: 30px;
                 height: 30px;
                 display: inline-block;
                 margin-bottom: -10px; }
+                @media (max-width: 1050px) {
+                  #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_color span a {
+                    height: 20px;
+                    width: 20px; } }
             #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_price p {
               color: #414141;
               font-family: "Bebas-Neue";
               font-size: 3.9285em;
               display: inline-block;
               margin-right: 10px; }
+              @media (max-width: 640px) {
+                #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_price p {
+                  font-size: 3.3571em;
+                  margin-bottom: 0; } }
             #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div .home_bestseller_secondCarousel_price p:last-child {
               color: #414141;
               font-family: "Bebas-Neue";
               font-size: 1.5714em;
               text-decoration: line-through;
               display: inline-block; }
+            @media (max-width: 992px) {
+              #home .home_bestseller .container-fluid #secondCarousel .carousel-inner .item div .container .row div a {
+                padding: 10px 18px; } }
     #home .home_bestseller .container-fluid #secondCarousel .carousel-control span:first-child {
       color: #e25a95;
       opacity: 0.8; }
@@ -642,48 +682,15 @@ footer .footer_downfooter {
       font-size: 2.7857em;
       border-bottom: 1px solid #d8d8d8;
       padding-bottom: 15px;
-      margin-bottom: 50px; }
+      margin-bottom: 80px; }
     #home .home_features .container .row {
       margin-bottom: 2%;
       display: flex;
       align-items: center; }
       #home .home_features .container .row div {
         text-align: center; }
-        #home .home_features .container .row div span {
-          background: url("../img/icn/home_features_Icons.png");
-          display: inline-block; }
-        #home .home_features .container .row div .home_features_icon1 {
-          background-position: 0px -408px;
-          width: 123px;
-          height: 126px; }
-        #home .home_features .container .row div .home_features_icon2 {
-          background-position: 0px -266px;
-          width: 109px;
-          height: 132px; }
-        #home .home_features .container .row div .home_features_icon3 {
-          background-position: 0px -760px;
-          width: 92px;
-          height: 99px; }
-        #home .home_features .container .row div .home_features_icon4 {
-          background-position: 0px 0px;
-          width: 168px;
-          height: 126px; }
-        #home .home_features .container .row div .home_features_icon5 {
-          background-position: 0px -869px;
-          width: 144px;
-          height: 144px; }
-        #home .home_features .container .row div .home_features_icon6 {
-          background-position: 0px -1023px;
-          width: 152px;
-          height: 91px; }
-        #home .home_features .container .row div .home_features_icon7 {
-          background-position: 0px -136px;
-          width: 120px;
-          height: 120px; }
-        #home .home_features .container .row div .home_features_icon8 {
-          background-position: 0px -544px;
-          width: 206px;
-          height: 206px; }
+        #home .home_features .container .row div img {
+          width: 45%; }
         #home .home_features .container .row div h4 {
           color: #fff;
           font-family: "Open Sans Semibold";
@@ -716,6 +723,9 @@ footer .footer_downfooter {
           color: #389fbd;
           font-family: "ITC_Avant-Bold";
           font-size: 1.4285em; }
+          @media (max-width: 480px) {
+            #home .home_celebrities .container-fluid div h4 {
+              font-size: 1em; } }
   #home .home_gallery {
     padding-top: 20px; }
     #home .home_gallery h2 {
