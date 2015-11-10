@@ -682,19 +682,25 @@ footer .footer_downfooter {
       border-bottom: 1px solid #d8d8d8;
       padding-bottom: 15px;
       margin-bottom: 80px; }
-    #home .home_features .container .row {
-      margin-bottom: 2%;
-      display: flex;
-      align-items: center; }
-      #home .home_features .container .row div {
-        text-align: center; }
-        #home .home_features .container .row div img {
-          width: 45%; }
-        #home .home_features .container .row div h4 {
-          color: #fff;
-          font-family: "Open Sans Semibold";
-          font-size: 1.2857em;
-          padding: 0 2vw; }
+      @media (max-width: 767px) {
+        #home .home_features h2 {
+          margin-bottom: 15px; } }
+    #home .home_features .container .row div {
+      text-align: center;
+      height: 195px; }
+      @media (max-width: 767px) {
+        #home .home_features .container .row div {
+          height: 136px; } }
+      #home .home_features .container .row div img {
+        width: 45%; }
+      #home .home_features .container .row div h4 {
+        color: #fff;
+        font-family: "Open Sans Semibold";
+        font-size: 1.2857em;
+        padding: 0 2vw; }
+        @media (max-width: 767px) {
+          #home .home_features .container .row div h4 {
+            font-size: 1.1em; } }
   #home .home_celebrities {
     padding-top: 20px; }
     #home .home_celebrities .container-fluid {

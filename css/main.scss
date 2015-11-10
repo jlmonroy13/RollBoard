@@ -815,14 +815,18 @@ footer {
       border-bottom: 1px solid #d8d8d8;
       padding-bottom: 15px;
       margin-bottom: 80px;
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
+      }
     }
     .container {
       .row {
-        margin-bottom: 2%;
-        display: flex;
-        align-items: center;
         div {
-          text-align: center;
+          text-align: center; 
+          height: 195px;
+          @media (max-width: 767px) {
+            height: 136px;
+          }         
           img {
             width: 45%;
           }
@@ -830,6 +834,9 @@ footer {
             color: #fff;
             font-family: "Open Sans Semibold";
             font-size: 1.2857em;
+            @media (max-width: 767px) {
+              font-size: 1.1em;
+            } 
             padding: 0 2vw;
           }
         }
