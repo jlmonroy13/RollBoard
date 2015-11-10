@@ -105,7 +105,8 @@ header nav.navbar {
     margin-top: 34px; }
     @media (max-width: 1199px) {
       header nav.navbar .container .collapse ul.nav {
-        margin-top: 0px; } }
+        margin-top: 0px;
+        z-index: 25; } }
     @media (max-width: 767px) {
       header nav.navbar .container .collapse ul.nav {
         background-color: rgba(0, 0, 0, 0.7); } }
@@ -334,7 +335,7 @@ footer .footer_downfooter {
 ==================================================*/
 .counterSocialNet {
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   top: 170px;
   right: 0; }
   .counterSocialNet ul {
@@ -461,6 +462,16 @@ footer .footer_downfooter {
   /*================= SECTION CAROUSEL ================================*/ }
   #home .home_carousel {
     /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */ }
+    #home .home_carousel .home_carousel_warranty {
+      position: absolute;
+      z-index: 7;
+      top: 215px; }
+      @media (max-width: 550px) {
+        #home .home_carousel .home_carousel_warranty {
+          width: 150px; } }
+      @media (max-width: 400px) {
+        #home .home_carousel .home_carousel_warranty {
+          top: 185px; } }
     #home .home_carousel #firstCarousel {
       max-height: 672px;
       height: 93vh;
@@ -476,30 +487,69 @@ footer .footer_downfooter {
           height: 672px;
           background-color: transparent;
           width: 100%; }
+          #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
+            background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat;
+            background-size: cover; }
+            @media (max-width: 900px) {
+              #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
+                background: url("../img/bckg/home_carousel_img1a_900px.jpg") no-repeat; } }
+          #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
+            background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat;
+            background-size: cover; }
+            @media (max-width: 900px) {
+              #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
+                background: url("../img/bckg/home_carousel_img2a_900px.jpg") no-repeat; } }
+          #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
+            background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat;
+            background-size: cover; }
+            @media (max-width: 900px) {
+              #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
+                background: url("../img/bckg/home_carousel_img3a_900px.jpg") no-repeat; } }
           #home .home_carousel #firstCarousel .carousel-inner .item div {
-            background-size: cover;
             max-height: 672px;
             height: 93vh;
-            width: 100%; }
-          #home .home_carousel #firstCarousel .carousel-inner .item .first-slide {
-            background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat; }
-          #home .home_carousel #firstCarousel .carousel-inner .item .second-slide {
-            background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat; }
-          #home .home_carousel #firstCarousel .carousel-inner .item .third-slide {
-            background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat; }
+            width: 100vw; }
         #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
-          z-index: 10;
+          z-index: 8;
           bottom: 19%;
           text-align: right;
           margin-right: -11vw; }
+          @media (max-width: 890px) {
+            #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+              bottom: 25%; } }
+          @media (max-width: 770px) {
+            #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+              bottom: 20%;
+              margin-right: -4vw; } }
+          @media (max-width: 770px) {
+            #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+              bottom: 20%;
+              margin-right: -4vw; } }
+          @media (max-width: 550px) {
+            #home .home_carousel #firstCarousel .carousel-inner .carousel-caption {
+              bottom: 16%;
+              text-align: center; } }
           #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
             text-align: right;
             font-family: "ITC_Avant-Bold";
             margin: 0;
             font-size: 3.5714em;
             margin: -5px 0; }
+            @media (max-width: 890px) {
+              #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
+                font-size: 2.7857em; } }
+            @media (max-width: 660px) {
+              #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
+                font-size: 2.1428em; } }
+            @media (max-width: 550px) {
+              #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1 {
+                font-size: 1.8571em;
+                text-align: center; } }
           #home .home_carousel #firstCarousel .carousel-inner .carousel-caption h1:nth-child(4) {
             margin-bottom: 15px; }
+          @media (max-width: 660px) {
+            #home .home_carousel #firstCarousel .carousel-inner .carousel-caption a {
+              padding: 15px 10px; } }
       #home .home_carousel #firstCarousel .carousel-control {
         max-height: 672px;
         height: 93vh;
