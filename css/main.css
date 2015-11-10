@@ -984,6 +984,24 @@ footer .footer_downfooter {
   .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
     width: 100%;
     height: 76px; }
+    @media (max-width: 1199px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 60px; } }
+    @media (max-width: 991px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 42px; } }
+    @media (max-width: 767px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 85px; } }
+    @media (max-width: 680px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 64px; } }
+    @media (max-width: 480px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 44px; } }
+    @media (max-width: 350px) {
+      .productdetail_features .container .col-md-7 .row:nth-child(2) .col-md-3 iframe {
+        height: 25px; } }
   .productdetail_features .container .col-md-5 {
     padding-left: 10px; }
     .productdetail_features .container .col-md-5 h3,
@@ -1038,9 +1056,23 @@ footer .footer_downfooter {
       text-decoration: line-through;
       display: inline-block; }
     .productdetail_features .container .col-md-5 .productdetail_counter {
-      width: 10%; }
+      width: 135px; }
+      .productdetail_features .container .col-md-5 .productdetail_counter div.input-group span {
+        display: table-cell; }
+        .productdetail_features .container .col-md-5 .productdetail_counter div.input-group span button {
+          background: none; }
+        .productdetail_features .container .col-md-5 .productdetail_counter div.input-group span button:focus {
+          box-shadow: none;
+          outline: none;
+          color: #393939; }
+      .productdetail_features .container .col-md-5 .productdetail_counter div.input-group input {
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: #393939;
+        font-family: "Gotham-Medium"; }
     .productdetail_features .container .col-md-5 a {
-      width: 60%; }
+      width: 255px; }
     .productdetail_features .container .col-md-5 ul {
       padding-left: 0;
       margin-top: 20px; }
@@ -1054,7 +1086,8 @@ footer .footer_downfooter {
             margin-right: 6px; }
           .productdetail_features .container .col-md-5 ul li a span {
             font-family: "Bebas-Neue";
-            font-size: 1.1em; }
+            font-size: 1.1em;
+            display: inline-block; }
 
 .productdetail_textdesciption {
   margin-top: 25px;
