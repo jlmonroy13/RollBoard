@@ -132,6 +132,7 @@ header {
           margin-top: 34px;
           @media (max-width: 1199px) {
             margin-top: 0px;
+            z-index: 25;
           }
           @media (max-width: 767px) {
             background-color: rgba(0,0,0,0.7);
@@ -412,7 +413,7 @@ footer {
 ==================================================*/
 .counterSocialNet {
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   top: 170px;
   right: 0;
   ul {
@@ -541,6 +542,16 @@ footer {
 #home {
   /*================= SECTION CAROUSEL ================================*/
   .home_carousel {
+    .home_carousel_warranty {
+      position: absolute;
+      z-index: 7;
+      top: 215px;
+      @media (max-width: 550px) {
+        width: 150px;
+      }@media (max-width: 400px) {
+        top: 185px;
+      }
+    }
     /*============= CUSTOMIZE THE FIRST HOMEPAGE CAROUSEL ============ */
     #firstCarousel {
       max-height: 672px;
@@ -558,38 +569,79 @@ footer {
         .item {
           height: 672px;
           background-color: transparent;
-          width: 100%;
-          div {
-            background-size: cover;
-            max-height: 672px;
-            height: 93vh;
-            width: 100%;
-          }
+          width: 100%; 
           .first-slide {
             background: url("../img/bckg/home_carousel_img1a.jpg") no-repeat;
+            @media (max-width: 900px) {
+              background: url("../img/bckg/home_carousel_img1a_900px.jpg") no-repeat;
+            }
+            background-size: cover;
           }
           .second-slide {
             background: url("../img/bckg/home_carousel_img2a.jpg") no-repeat;
+            @media (max-width: 900px) {
+              background: url("../img/bckg/home_carousel_img2a_900px.jpg") no-repeat;
+            }
+            background-size: cover;
           }
           .third-slide {
             background: url("../img/bckg/home_carousel_img3a.jpg") no-repeat;
+            @media (max-width: 900px) {
+              background: url("../img/bckg/home_carousel_img3a_900px.jpg") no-repeat;
+            }
+            background-size: cover;
           }
+          div {
+            max-height: 672px;
+            height: 93vh;
+            width: 100vw;
+          } 
         }
         /* Since positioning the image, we need to help out the caption */
         .carousel-caption {
-          z-index: 10;
+          z-index: 8;
           bottom: 19%;
           text-align: right;
           margin-right: -11vw;
+          @media (max-width: 890px) {
+            bottom: 25%;
+          }
+          @media (max-width: 770px) {
+            bottom: 20%;
+            margin-right: -4vw;
+          }
+          @media (max-width: 770px) {
+            bottom: 20%;
+            margin-right: -4vw;
+          }
+          @media (max-width: 550px) {
+            bottom: 16%;
+            text-align: center;
+          }
           h1 {
             text-align: right;
             font-family: "ITC_Avant-Bold";
             margin: 0;
             font-size: 3.5714em;
             margin: -5px 0;
+            @media (max-width: 890px) {
+              font-size: 2.7857em;
+            }
+            @media (max-width: 660px) {
+              font-size: 2.1428em;
+            }
+            @media (max-width: 550px) {
+              font-size: 1.8571em;
+              text-align: center;
+            }
           }
           h1:nth-child(4) {
             margin-bottom: 15px;
+          }
+          a {
+            @media (max-width: 660px) {
+              padding: 15px 10px;
+            }
           }
         }
       }
