@@ -206,7 +206,6 @@ footer .container-fluid {
       padding-left: 4%; } }
   @media (max-width: 500px) {
     footer .container-fluid .row .col-md-3:nth-child(3) {
-      clear: left;
       margin-left: 15%;
       padding: 0;
       width: 70%; } }
